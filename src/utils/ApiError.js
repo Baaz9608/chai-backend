@@ -1,3 +1,7 @@
+
+import captureStackTrace from 'capture-stack-trace';
+
+
 class ApiError extends Error
 {
     constructor(
@@ -16,9 +20,9 @@ class ApiError extends Error
         if(stack){
             this.stack = stack
         }else{
-            Error.captureStackTrace(this, this.constructor)
+            Error.captureStackTrace(this.constructor)
         }
     }
 }
 
-export default ApiError
+export { ApiError }

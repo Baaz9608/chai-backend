@@ -16,4 +16,4 @@ export const upload = multer(
     }
 )
 
-// study -> disstorage and memorystorage from chat gpt and file
+// study -> diskstorage and memorystorage from chat gpt and file
